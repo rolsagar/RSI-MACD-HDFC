@@ -1,5 +1,5 @@
 """
-Indian Stocks — RSI + MACD Dashboard
+My HDFC Stocks — RSI + MACD Dashboard
 =====================================
 A Streamlit dashboard that mirrors the reference design:
  - "Fully Bullish" and "Weak / Oversold" highlight cards
@@ -28,7 +28,7 @@ from stock_utils import IST, RSI_PERIOD, fetch_daily, macd_lines, resample_ohlc,
 # --------------------------------------------------------------------------
 
 st.set_page_config(
-    page_title="Indian Stocks — RSI + MACD Dashboard",
+    page_title="My HDFC Stocks — RSI + MACD Dashboard",
     page_icon="📈",
     layout="wide",
 )
