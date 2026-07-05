@@ -1,6 +1,3 @@
-Here's the complete, current file for your **RSI-MACD-HDFC** dashboard. Copy everything below into GitHub's editor, replacing all contents of `app.py`:
-
-```python
 """
 Indian Stocks — RSI + MACD Dashboard
 =====================================
@@ -561,6 +558,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
+
 
 After committing, Streamlit Cloud will auto-redeploy within a minute or two.
