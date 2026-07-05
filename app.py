@@ -481,7 +481,7 @@ def main():
     render_html(
         f"""
         <div class="dash-wrap">
-        <h1 style="margin-bottom:2px;">Indian Stocks — RSI + MACD Dashboard</h1>
+        <h1 style="margin-bottom:2px;">My HDFC Stocks — RSI + MACD Dashboard</h1>
         <p style="color:#6b7280; margin-top:0;">RSI (14, Wilder's EWM) &middot; MACD (12,26,9) &middot; Daily / Weekly / Monthly &middot; NSE</p>
         <p style="color:#111827; margin-top:0; font-size:13px; font-weight:600;">&#128337; Data pulled: {fetch_timestamp}</p>
         </div>
