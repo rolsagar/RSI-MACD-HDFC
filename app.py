@@ -1,3 +1,4 @@
+
 """
 Indian Stocks — RSI + MACD Dashboard
 =====================================
@@ -558,6 +559,6 @@ def main():
 
 if __name__ == "__main__":
     main()
-
+```
 
 After committing, Streamlit Cloud will auto-redeploy within a minute or two.
