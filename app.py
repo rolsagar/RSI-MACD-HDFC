@@ -213,12 +213,12 @@ CSS = """
 .badge-watch { background:#f59e0b; color:white; }
 .badge-weak { background:#dc2626; color:white; }
 
-table.dash-table { width:100%; min-width:900px; border-collapse: collapse; font-size: 13px; background:white; border-radius: 10px; overflow:hidden;}
+table.dash-table { width:100%; table-layout:fixed; border-collapse: collapse; font-size: 13px; background:white; border-radius: 10px; overflow:hidden;}
 table.dash-table thead th {
     background:#12121f; color:#ffffff; text-transform:uppercase; font-size:11px;
     letter-spacing: 0.03em; padding: 10px 12px; text-align:left; font-weight:600;
 }
-table.dash-table td { padding: 9px 12px; border-bottom: 1px solid #f0f1f3; vertical-align: middle; }
+table.dash-table td { padding: 9px 8px; border-bottom: 1px solid #f0f1f3; vertical-align: middle; }
 table.dash-table tr.block-start td { border-top: 2px solid #d1d5db; }
 
 .stock-name { font-weight:700; color:#111827; font-size:13px; }
@@ -234,7 +234,7 @@ table.dash-table tr.block-start td { border-top: 2px solid #d1d5db; }
 
 .pct-wrap { display:flex; flex-direction:column; align-items:flex-start; gap:4px; }
 .pct-num { font-weight:700; font-size:14px; }
-.pct-bar-bg { width:90px; height:6px; background:#e5e7eb; border-radius:4px; overflow:hidden; }
+.pct-bar-bg { width:68px; height:6px; background:#e5e7eb; border-radius:4px; overflow:hidden; }
 .pct-bar-fill { height:100%; border-radius:4px; }
 .pct-caption { font-size:10px; color:#9ca3af; }
 
@@ -423,6 +423,15 @@ def build_table(stocks: list[dict]) -> str:
     return f"""
     <div class="section-box" style="padding:0; overflow-x:auto; -webkit-overflow-scrolling:touch;">
     <table class="dash-table">
+        <colgroup>
+            <col style="width:13%;">
+            <col style="width:15%;">
+            <col style="width:12%;">
+            <col style="width:12%;">
+            <col style="width:9%;">
+            <col style="width:22%;">
+            <col style="width:17%;">
+        </colgroup>
         <thead>
             <tr>
                 <th>Stock</th>
