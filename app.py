@@ -1,5 +1,8 @@
+Here's the complete, current file for your **RSI-MACD-HDFC** dashboard. Copy everything below into GitHub's editor, replacing all contents of `app.py`:
+
+```python
 """
-My HDFC Stocks — RSI + MACD Dashboard
+Indian Stocks — RSI + MACD Dashboard
 =====================================
 A Streamlit dashboard that mirrors the reference design:
  - "Fully Bullish" and "Weak / Oversold" highlight cards
@@ -213,7 +216,7 @@ CSS = """
 .badge-watch { background:#f59e0b; color:white; }
 .badge-weak { background:#dc2626; color:white; }
 
-table.dash-table { width:100%; border-collapse: collapse; font-size: 13px; background:white; border-radius: 10px; overflow:hidden;}
+table.dash-table { width:100%; min-width:900px; border-collapse: collapse; font-size: 13px; background:white; border-radius: 10px; overflow:hidden;}
 table.dash-table thead th {
     background:#12121f; color:#ffffff; text-transform:uppercase; font-size:11px;
     letter-spacing: 0.03em; padding: 10px 12px; text-align:left; font-weight:600;
@@ -421,7 +424,7 @@ def build_table(stocks: list[dict]) -> str:
             first = False
 
     return f"""
-    <div class="section-box" style="padding:0; overflow:hidden;">
+    <div class="section-box" style="padding:0; overflow-x:auto; -webkit-overflow-scrolling:touch;">
     <table class="dash-table">
         <thead>
             <tr>
@@ -558,3 +561,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+```
+
+After committing, Streamlit Cloud will auto-redeploy within a minute or two.
