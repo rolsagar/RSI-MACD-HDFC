@@ -1,6 +1,5 @@
-
 """
-Indian Stocks — RSI + MACD Dashboard
+My HDFC Stocks — RSI + MACD Dashboard
 =====================================
 A Streamlit dashboard that mirrors the reference design:
  - "Fully Bullish" and "Weak / Oversold" highlight cards
